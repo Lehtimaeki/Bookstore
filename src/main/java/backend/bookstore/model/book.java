@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 
 
 @Entity
-public class book {
+public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,9 +16,9 @@ public class book {
         private int publicationYear;
         private double price; 
 
-    public book() {}
+    public Book() {}
 
-    public book(Long id, String title, String author, String isbn, int publicationYear, double price) {
+    public Book(Long id, String title, String author, String isbn, int publicationYear, double price) {
         this.id = id;
         this.title = title;
         this.author = author;
